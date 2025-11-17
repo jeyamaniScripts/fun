@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  animation: float 2.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* glowing effect added by JS */
+.glow {
+  animation: glowPulse 1.2s infinite alternate;
+}
+
+@keyframes glowPulse {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ffb6c1;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 40px #ff6b81;
+  }
+}
